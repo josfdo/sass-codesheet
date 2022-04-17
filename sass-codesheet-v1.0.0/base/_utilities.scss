@@ -1,0 +1,69 @@
+// Floats.
+
+.fright {
+    float: right !important;
+}
+
+.fleft {
+    float: left !important;
+}
+
+.fnone {
+    float: none !important;
+}
+
+// Overflow class properties.
+
+.oflow-hidden {
+    overflow: hidden;
+}
+
+.oflow-auto {
+    overflow: auto;
+}
+
+.oflow-x-auto {
+    overflow-x: auto;
+}
+
+.oflow-y-auto {
+    overflow-y: auto;
+}
+
+// Class for cursor.
+
+.pev-none {
+    pointer-events: none;
+}
+
+.cur-pointer {
+    cursor: pointer;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+// Caret class.
+
+.caret-down,
+.caret-left,
+.caret-right {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 4px solid transparent;
+    pointer-events: none;
+}
+
+.caret-down {
+   border-top-color: initial;
+}
+
+.caret-left {
+    border-right-color: initial;
+}
+
+.caret-right {
+    border-left-color: initial;
+}

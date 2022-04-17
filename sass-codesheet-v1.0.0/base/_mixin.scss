@@ -1,0 +1,79 @@
+@mixin box-shadow($color) {
+    box-shadow: 0px 7px 20px $color;
+}
+
+@mixin breakpoint-min($point) {
+    @if $point == pho-xs {
+        @media screen and (min-width: map-get($breakpoint, pho-xs)) {
+            @content;
+        }
+    }
+
+    @if $point == pho {
+        @media screen and (min-width: map-get($breakpoint, pho)) {
+            @content;
+        }
+    }
+
+    @if $point == pha {
+        @media screen and (min-width: map-get($breakpoint, pha)) {
+            @content;
+        }
+    }
+
+    @if $point == tab {
+        @media screen and (min-width: map-get($breakpoint, tab)) {
+            @content;
+        }
+    }
+
+    @if $point == lap {
+        @media screen and (min-width: map-get($breakpoint, lap)) {
+            @content;
+        }
+    }
+
+    @if $point == des {
+        @media screen and (min-width: map-get($breakpoint, des)) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint-max($point) {
+    @if $point == pho-xs {
+        @media screen and (max-width: map-get($breakpoint, pho-xs)) {
+            @content;
+        }
+    }
+
+    @if $point == pho {
+        @media screen and (max-width: map-get($breakpoint, pho)) {
+            @content;
+        }
+    }
+
+    @if $point == pha {
+        @media screen and (max-width: map-get($breakpoint, pha)) {
+            @content;
+        }
+    }
+
+    @if $point == tab {
+        @media screen and (max-width: map-get($breakpoint, tab)) {
+            @content;
+        }
+    }
+
+    @if $point == lap {
+        @media screen and (max-width: map-get($breakpoint, lap)) {
+            @content;
+        }
+    }
+
+    @if $point == des {
+        @media screen and (max-width: map-get($breakpoint, des)) {
+            @content;
+        }
+    }
+}

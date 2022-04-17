@@ -1,0 +1,116 @@
+// Background colors notice windows.
+
+@each $key, $value in $notice-colors {
+
+    .notice-#{$key} {
+        background-color: $value !important;
+    }
+}
+
+// Structure notice windows, and color theme for links.
+
+[class*="notice-"] {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+    [href] {
+        font-weight: bold;
+        transition: .3s;
+    }
+}
+
+// Settings by backgrounds colors.
+
+.notice-info {
+    color: $color-info-notice !important;
+    border: 1px solid rgba($color-info-notice, .2);
+
+    [href] {
+        color: $color-info-notice;
+
+        &:link:hover {
+            color: rgba($color-info-notice, .7);
+        }
+    }
+
+    hr {
+        background-color: rgba($color-info-notice, .2);
+    }
+}
+
+.notice-positive {
+    color: $color-positive-notice !important;
+    border: 1px solid rgba($color-positive-notice, .2);
+
+    [href] {
+        color: $color-positive-notice;
+
+        &:link:hover {
+            color: rgba($color-positive-notice, .7);
+        }
+    }
+
+    hr {
+        background-color: rgba($color-positive-notice, .2);
+    }
+}
+
+.notice-alert {
+    color: $color-alert-notice !important;
+    border: 1px solid rgba($color-alert-notice, .2);
+
+    [href] {
+        color: $color-alert-notice;
+
+        &:link:hover {
+            color: rgba($color-alert-notice, .7);
+        }
+    }
+
+    hr {
+        background-color: rgba($color-alert-notice, .2);
+    }
+}
+
+.notice-negative {
+    color: $color-negative-notice !important;
+    border: 1px solid rgba($color-negative-notice, .2);
+
+    [href] {
+        color: $color-negative-notice;
+
+        &:link:hover {
+            color: rgba($color-negative-notice, .7);
+        }
+    }
+
+    hr {
+        background-color: rgba($color-negative-notice, .2);
+    }
+}
+
+.notice-muted{
+    color: $color-muted-notice !important;
+    border: 1px solid rgba($color-muted-notice, .2);
+
+    [href] {
+        color: $color-muted-notice;
+
+        &:link:hover {
+            color: rgba($color-muted-notice, .7);
+        }
+    }
+
+    hr {
+        background-color: rgba($color-muted-notice, .2);
+    }
+}
+
+// button close windows alert
+.notice-close {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}

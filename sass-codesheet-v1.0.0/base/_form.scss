@@ -1,0 +1,130 @@
+// Form class properties.
+
+.form {
+
+    #{$form-label-class} {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    #{$form-field-class} {
+        width: 100%;
+        height: $field-standard-height;
+        padding: $field-Y-padding $field-X-padding;
+        margin: 0 $field-X-margin;
+        border: none;
+        border: 1px solid #b3b3b3;
+        border-radius: 0.1875rem;
+        box-sizing: border-box;
+        appearance: none;
+        background-color: white;
+    }
+
+    input[type="search"] {
+        outline-offset: -2px;
+    }
+
+    input[type="file"] {
+        padding: 0;
+
+        &::file-selector-button {
+            height: 100%;
+            padding: 0 0.65rem;
+            font-size: 12px;
+            letter-spacing: $letter-spacing-default;
+            border: none;
+        }
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: auto !important;
+        height: auto !important;
+        margin: 7px 0;
+        outline: none;
+        vertical-align: baseline;
+        appearance: auto;
+        background-color: transparent;
+    }
+
+    
+    input[type="range"] {
+        appearance: auto;
+        background-color: transparent;
+    }
+     
+    input[type="color"] {
+        width: 40px;
+        padding: 2px;
+        appearance: auto;
+        background-color: transparent;
+    }
+
+    input[type="image"] {
+        padding: 0;
+    }
+
+    textarea {
+        min-height: 200px;
+        padding: 0.65rem;
+        resize: vertical;
+    }
+
+    select {
+        padding-right: 2.5rem;
+        text-overflow: ellipsis;
+        background-color: white;
+        appearance: auto;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+}
+
+// Form uppercase properties.
+
+.form-uppercase {
+    #{$form-label-class},
+    select,
+    ::placeholder {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+// Form font-variant-caps properties.
+
+.form-f-vc {
+    #{$form-label-class},
+    select,
+    ::placeholder,
+    ::file-selector-button {
+        font-variant-caps: all-small-caps;
+    }
+}
+
+// Backgrounds color for inputs.
+
+.field-bg-focus {
+    #{$form-field-class} {
+        outline: none;
+        &:focus {
+            background-color: #e6f7ff;
+        }
+    }
+}
+
+// Border color for inputs.
+
+.field-brd-focus {
+    #{$form-field-class} {
+        outline: none;
+        &:focus {
+            border-color: #00ccff;
+            box-shadow: 0 0 0 2px #bee5f4;
+        }
+    }
+}
+

@@ -1,0 +1,113 @@
+//Button class general properties.
+
+#{$bttn-default} {
+  display: inline-block;
+  padding: $bttn-Y-padding $bttn-X-padding;
+  line-height: $bttn-line-height;
+  margin: $bttn-Y-margin $bttn-X-margin;
+  text-align: center;
+  color: inherit;
+  border: 1px solid transparent;
+  text-decoration: none !important;
+  font-weight: normal !important;
+  cursor: pointer;
+  border-radius: 0.1875rem;
+  box-sizing: border-box;
+}
+
+.bttn-md {
+  padding: $bttn-md-Y-padding $bttn-X-padding;
+}
+
+.bttn-sm {
+  padding: $bttn-sm-Y-padding $bttn-X-padding;
+  font-size: 12px;
+  line-height: normal;
+}
+
+// Button inly transition.
+
+[class*="bttn-"] {
+  transition: .3s;
+}
+
+// Button colors, solid and border.
+
+@each $key, $value in $buttons {
+
+  .bttn-#{$key} {
+    background-color: $value !important;
+    color: $white !important;
+
+    &:hover {
+      background-color: $value - 20% !important;
+    }
+  }
+
+  .bttn-brd-#{$key} {
+    border-color: $value !important;
+    color: $value !important;
+
+    &:hover {
+      color: $value - 50% !important;
+      box-shadow: 0 0 0 1px inset $value !important;
+    }
+  } 
+}
+
+// Button accordion.
+
+.bttn-accordion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $bttn-Y-padding $second-value;
+  box-sizing: border-box;
+}
+
+//bttn-group utility.
+
+.bttn-group {
+  .bttn,
+  [class*="bttn-"] {
+    margin-right: $first-value;
+    margin-left: $first-value;
+  }
+}
+
+// Button navbar menu, lines.
+
+.line {
+  width: 30px;
+  height: 1px;
+  background-color: #778088;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.line-light,
+.line-white {
+  & > .line {
+    background-color: $white;
+  }
+}
+
+.line-dark,
+.line-black {
+  & > .line {
+    background-color: $black;
+  }
+}
+
+// Button navbar menu, lines activation.
+
+.active .line:nth-child(1){
+  width: 10px;
+}
+
+.active .line:nth-child(3){
+  width: 10px;
+}

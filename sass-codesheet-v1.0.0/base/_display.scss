@@ -1,0 +1,77 @@
+// Displays class properties.
+
+.inline-block {
+    display: inline-block;
+}
+
+.d-table {
+    display: table;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+// Displays property in breakpoint
+
+@include breakpoint-max(tab) {
+
+    .tab-d-block {
+        display: block;
+    }
+    
+    .tab-d-none {
+        display: none;
+    }
+
+    .tab-inline-block {
+        display: inline-block;
+    }
+
+    .tab-d-table {
+        display: table;
+    }      
+} 
+
+@include breakpoint-max(pha) {
+
+    .pha-d-block {
+        display: block;
+    }
+    
+    .pha-d-none {
+        display: none;
+    }
+
+    .pha-inline-block {
+        display: inline-block;
+    }
+
+    .pha-d-table {
+        display: table;
+    }  
+}
+
+@include breakpoint-max(pho) {
+
+    
+    .pho-d-block {
+        display: block;
+    }
+    
+    .pho-d-none {
+        display: none;
+    }
+
+    .pho-inline-block {
+        display: inline-block;
+    }
+
+    .pho-d-table {
+        display: table;
+    }  
+}

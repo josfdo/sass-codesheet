@@ -1,0 +1,15 @@
+// Background colors, and text color white.
+
+@each $key, $value in $full-colors {
+
+    .bg-#{$key} {
+        background-color: $value !important;
+    }
+}
+
+
+// Bakgrounds transparent.
+
+.bg-tt {
+    background-color: transparent;
+}

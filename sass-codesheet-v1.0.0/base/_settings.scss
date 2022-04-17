@@ -1,0 +1,41 @@
+//SETTINGS CodeSheet
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #123455;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="image"] {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  line-height: inherit;
+  color: inherit; 
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: rgba(0,0,0, .1);
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+// END SETTINGS

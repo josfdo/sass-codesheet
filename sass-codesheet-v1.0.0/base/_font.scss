@@ -1,0 +1,169 @@
+@import "../utilities/rfs";
+
+// Settings fonts
+
+#{$display-font} {
+    line-height: 1.2; 
+}
+
+#{$h-class}, #{$font-class}, #{$display-font} {
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+#{$font-class} {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// Fonts size class
+
+.f1, .h1 {
+    font-size: $font-size-h1 !important;
+}
+
+.f2, .h2 {
+    font-size: $font-size-h2 !important;
+}
+
+.f3, .h3 {
+    font-size: $font-size-h3 !important;
+}
+
+.f4, .h4 {
+    font-size: $font-size-h4 !important;
+}
+
+.f5, .h5 {
+    font-size: $font-size-h5 !important;
+}
+
+.f6, .h6 {
+    font-size: $font-size-h6 !important;
+}
+
+
+.f7 {
+    @include font-size(85px !important);
+}
+
+.f8 {
+    @include font-size(75px !important);
+}
+
+.f9 {
+    @include font-size(65px !important);
+}
+
+.f10 {
+    @include font-size(55px !important);
+}
+
+.f11 {
+    @include font-size(45px !important);
+}
+
+.f12 {
+    @include font-size(40px !important);
+}
+
+// Styles fonts
+
+.f-bold {
+    font-weight: bold !important;
+}
+
+.f-italic {
+    font-style: italic !important;
+}
+
+.f-normal {
+    font-weight: normal !important;
+}
+
+.f-lighter {
+    font-weight: 300 !important;
+}
+
+// Delete link style
+
+.link-style-none {
+    text-decoration: none;
+    color: inherit;
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+// Adding link style CodeSheet
+
+.link-style {
+    color: $primary;
+    text-decoration: underline;
+    transition: .3s ease-out;
+
+    a:link,
+    a:visited {
+        color: inherit;
+    }
+
+    &:hover {
+        color: $primary + 30%;
+    }
+}
+
+// Text decoration class
+
+.txt-decoration-none {
+    text-decoration: none;
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+    }
+}
+
+// Convert fonts uppercase
+
+.f-vc {
+    font-variant-caps: all-small-caps;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// Class for delete line-height.
+
+.lh-0 {
+    line-height: 0;
+}
+
+// Add fonts color
+
+@each $key, $value in $text-colors {
+
+    .f-#{$key} {
+        color: $value !important;
+    }
+}
+
+// Item class properties.
+
+.item {
+    display: block;
+    padding: .625rem;
+}
+
+//Title group class properties.
+
+.title-group {
+    #{$h-tag} {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+

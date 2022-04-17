@@ -1,0 +1,42 @@
+$text-align:(
+
+left, 
+center, 
+right, 
+justify
+
+);
+
+@each $align in $text-align {
+
+    .txt-#{$align} {
+        text-align: $align !important;
+    }
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+// Vertical align
+
+.align-top {
+    vertical-align: top;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.align-baseline {
+    vertical-align: baseline;
+}
+
+.align-bottom {
+    vertical-align: bottom;
+}
+

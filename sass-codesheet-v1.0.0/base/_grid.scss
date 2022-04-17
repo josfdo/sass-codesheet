@@ -1,0 +1,61 @@
+// Containers.
+
+.container-expand {
+    display: flow-root;
+    width: 100%;
+    box-sizing: border-box;  
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2.5rem 1rem;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+
+    @include breakpoint-max(lap) {
+        padding: $fifth-value $second-value;
+    }
+}
+
+// Rows.
+
+.row { 
+    width: 100%;
+    margin: 2.5rem auto !important;
+}
+
+// Clear-fix.
+
+.row:after,
+.container:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+// Columns.
+
+.col {
+    float: left;
+    width: 100%; 
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+// Columns settings.
+
+.cols-sm {
+    .col {
+        padding: 0.5rem;
+    }
+}
+
+// Settings images in columns.
+
+[class*="col"],
+[class*="col-"] {
+    img {
+        width: 100%;
+    }
+}

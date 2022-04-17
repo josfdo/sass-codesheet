@@ -1,0 +1,32 @@
+// Animation for dropdowns.
+
+.slide-down {
+    animation: slide-down 0.3s !important;
+}
+
+    .slide-down-slow {
+        animation: slide-down 1.5s !important;
+    }
+
+    .slide-down-md-slow {
+        animation: slide-down 0.5s !important;
+    }
+
+    @include breakpoint-max(tab) {
+
+        .slide-down-md-slow {
+            animation: slide-down 1.5s !important;
+        }
+    }
+
+@keyframes slide-down {
+    from {
+        top: -2000px;
+        opacity: 0;
+    } 
+    
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}

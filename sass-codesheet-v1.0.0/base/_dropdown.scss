@@ -1,0 +1,107 @@
+// Dropdown class properties.
+
+.dropdown, 
+.dropdown-hover {
+    position: relative;
+
+    :link,
+    :visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .dropdown-content, 
+    .dropdown-content-hover {
+        min-width: 230px;
+        padding: 1rem;
+        white-space: nowrap;
+        position: absolute;
+        z-index: 2;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: none;
+        @include box-shadow(rgba(0,0,0, .1));
+
+        .item {
+            padding: 0.5rem .5rem;
+            color: inherit;
+        }
+
+        .header-item {
+            padding: .625rem 0;
+            margin: 5px 0;
+            line-height: normal;
+            font-variant: all-small-caps;
+        }
+
+        .dropdown-subcontent, 
+        .dropdown-subcontent-hover {
+            position: relative;
+            display: none;
+            padding: 0 .625rem;
+        }
+    }
+
+// Settings dropdown for breakpoint
+
+    @include breakpoint-max(pho) {
+        .pho-dropdown-column {
+            min-width: 100%;
+            white-space: normal;
+            position: relative;
+            box-shadow: none;    
+        }
+    }
+
+    @include breakpoint-max(pha) {
+        .pha-dropdown-column {
+            min-width: 100%;
+            white-space: normal;
+            position: relative;
+            box-shadow: none;
+        }
+    }
+
+    @include breakpoint-max(tab) {
+        .tab-dropdown-column {
+            min-width: 100%;
+            white-space: normal;
+            position: relative;
+            box-shadow: none;
+        }
+    }
+}
+
+// Dropdown hover class.
+
+@include breakpoint-min(tab) {
+
+    .dropdown-hover{
+        &:hover {
+            .dropdown-content-hover {
+                display: block;
+            }
+        }
+    }
+
+    .dropdown-hover {
+        .dropdown-content-hover {
+            .dropdown-hover {
+                &:hover {
+                    .dropdown-subcontent-hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown-hover {
+        cursor: pointer;
+
+        .dropdown-toggle-hover {
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// Initial class for table.
+
+.table {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: #fff;
+
+    caption {
+        text-align: left;
+        padding: 10px 0.5rem;
+    }
+
+    thead {tr {th {padding: 10px 0.5rem;}}
+    }
+
+    tbody {tr{td {padding: 10px 0.5rem;}}
+    }
+
+    .bttn {
+        padding: $bttn-sm-Y-padding $bttn-X-padding;
+        font-size: 13px;
+        line-height: normal;
+    }
+}
+
+// Table cell border
+
+.table-cell-brd {
+
+    thead {
+        border-bottom: 1px solid rgba(0,0,0, .2);
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid rgba(0,0,0, .2);
+        }
+    }
+}
+
+// Table cell color
+
+.table-cell-color {
+    border: 1px solid rgba(0,0,0, .1);
+
+    thead {
+        color: #fff;
+        border-bottom: 0px;
+        background-color: #333;
+    }
+
+    tbody {
+        tr {
+            background-color: #f5f5f5;
+            &:nth-child(odd) {
+                background-color: #fff;
+            }
+        }
+    }
+}
+

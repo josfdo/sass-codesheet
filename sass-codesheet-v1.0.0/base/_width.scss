@@ -1,0 +1,84 @@
+.w-0 {
+    width: 0 !important;
+}
+
+.w-auto {
+    width: auto !important;
+}
+
+// Widths percent.
+
+.w20 {
+    width: 20% !important; 
+}
+
+.w25 {
+    width: 25% !important; 
+}
+
+.w50 {
+    width: 50% !important;
+}
+
+.w100 {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+// Settings widths pixels.
+
+[class*="w-"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+// Widths pixels.
+
+.w-100 {
+    max-width: 100px !important;
+}
+
+.w-200 {
+    max-width: 200px !important;
+}
+
+.w-300 {
+    max-width: 300px !important;
+}
+
+.w-400 {
+    max-width: 400px !important;
+}
+
+.w-500 {
+    max-width: 500px !important;
+}
+
+.w-600 {
+    max-width: 600px !important;
+}
+
+.w-700 {
+    max-width: 700px !important;
+}
+
+.w-800 {
+    max-width: 800px !important;
+}
+
+.w-900 {
+    max-width: 900px !important;
+}
+
+.w-1000 {
+    max-width: 1000px !important;
+}
+
+.w-1100 {
+    max-width: 1100px !important;
+}
+
+.w-1200 {
+    max-width: 1200px !important;
+}
